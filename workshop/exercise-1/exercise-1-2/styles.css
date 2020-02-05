@@ -15,29 +15,29 @@ body {
   padding: 4px 32px 32px;
 }
 
-h1,
-h2 {
+.title,
+.subtitle {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
-h2 {
+.subtitle {
   text-align: left;
 }
 
-p {
+.paragraph {
   font-size: 17px;
   line-height: 1.5em;
 }
 
-img {
+.img {
   border: #fafafa;
   border-radius: 4px;
   box-shadow: 4px 4px 14px rgba(128, 128, 128, 0.4);
   width: 100%;
 }
 
-a {
+.link {
   color: #174e7c;
   display: block;
   font-weight: 700;
