@@ -17,6 +17,11 @@
   width: calc(100% - 50px);
 }
 
+.track li p {
+  color: #c4d109;
+  margin-left: 20px;
+}
+
 .track li:last-child {
   border-bottom: none;
 }
