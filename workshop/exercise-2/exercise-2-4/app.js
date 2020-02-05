@@ -5,6 +5,8 @@ const FROGS = 3;
 
 let racers = [];
 
+let ranking = [];
+
 const ol = document.querySelector("#main ol");
 //Create for loop that makes use of FROGS to know how many lanes to create.
 for (let i = 0; i < FROGS; i++) {
@@ -67,6 +69,13 @@ const loopHops = setInterval(() => {
     if (racers[i].progress !== 100) {
       racingFrogs(racers);
     } else {
+      racers.forEach(({ name, progress }) =>
+        ranking.push(`${name} scored ${progress}\n`)
+      );
+      const rankP = document
+        .querySelector("#main")
+        .appendChild(document.createElement("p"));
+      rankP.innerText = ranking;
       document.querySelector("h1").innerText = "We have a winner!!!!!!";
       document.querySelector("h1").setAttribute("style", "text-align: center");
       clearInterval(loopHops);
