@@ -56,12 +56,20 @@ const racingFrogs = frogs => {
     }
 
     const frogId = document.querySelector(`#frog${i}`);
-    frogId.style.left = frog.progress * 10 + "px";
+    frogId.style.left = frog.progress * 11 + "px";
 
     i = i + 1;
   });
 };
 
-setInterval(() => {
-  racingFrogs(racers);
+const loopHops = setInterval(() => {
+  for (let i = 0; i < racers.length; i++) {
+    if (racers[i].progress !== 100) {
+      racingFrogs(racers);
+    } else {
+      document.querySelector("h1").innerText = "We have a winner!!!!!!";
+      document.querySelector("h1").setAttribute("style", "text-align: center");
+      clearInterval(loopHops);
+    }
+  }
 }, 1000);
