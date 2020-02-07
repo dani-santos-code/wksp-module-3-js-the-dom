@@ -28,7 +28,7 @@ It looks _almost_ identical to the HTML you wrote...
 
 ---
 
-The DOM is actually your _corrected_ HTML. 
+The DOM is actually your _corrected_ HTML.
 
 ⚠️ This means that it is actually impossible to debug your HMTL with devTools.
 
@@ -98,10 +98,10 @@ Instead, we will use these methods
 
 ### Modify a Leaf
 
-You can modify the content of a leaf, an end node with 
+You can modify the content of a leaf, an end node with
 
-- [`.innerText()`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
-- [`.innerHTML()`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
+- [`.innerText`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+- [`.innerHTML`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
 
 ```js
 // Example
